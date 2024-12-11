@@ -72,8 +72,7 @@ spec:
           workspace: pipeline-workspace
       taskRef:
         name: buildah
-        kind: ClusterTask #installed on cluster by admin (ClusterTask is installed cluster-wide by an 
-        # administrator, and anyone can use it in their pipelines without having to install it themselves.)
+        kind: ClusterTask
       params:
       - name: IMAGE
         value: "$(params.build-image)"
